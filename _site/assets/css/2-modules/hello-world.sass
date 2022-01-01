@@ -1,0 +1,115 @@
+.title
+  z-index: 1000
+  position: absolute
+  color: white
+  text-align: center
+  width: 100%
+  top: 30%
+
+  .name
+    font-size: 4vw
+    text-transform: uppercase
+
+  h1
+    font-size: 2vw
+    color: white
+    font-weight: 400
+
+  +media($mobile)
+    top: 20%
+
+    .name
+      font-size: 6vw
+
+    span
+      font-size: 4vw
+
+.arrow
+  z-index: 1000
+  position: absolute
+  color: white
+  width: 100%
+  text-align: center
+  bottom: 10%
+
+  a
+    color: white
+
+.homepage-hero-module
+  border-right: none
+  border-left: none
+  position: relative
+
+.no-video .video-container video, .touch .video-container video
+  display: none
+
+.no-video .video-container .poster, .touch .video-container .poster
+  display: block !important
+
+.video-container
+  position: relative
+  bottom: 0%
+  left: 0%
+  height: 100%
+  width: 100%
+  overflow: hidden
+  background: #000
+  .poster img
+    width: 100%
+    bottom: 0
+    position: absolute
+    display: none
+
+    +media($mobile)
+      display: block
+
+  .filter
+    z-index: 100
+    position: absolute
+    +background-image(linear-gradient(37deg, rgba(#32ff7e, 0.4), rgba(#18dcff, 0.4)))
+    background: linear-gradiant
+    width: 100%
+    height: 100%
+  video
+    position: absolute
+    z-index: 0
+    bottom: 0
+    &.fillWidth
+      width: 100%
+
+.project-hero-container
+    .title
+      z-index: 1000
+      position: absolute
+      color: white
+      text-align: center
+      width: 100%
+      top: 30%
+
+      h1
+        font-size: 6vw
+        color: white
+        font-weight: 700
+
+      +media($mobile)
+        top: 20%
+
+        span
+          font-size: 4vw
+
+    .filter
+      z-index: 100
+      position: absolute
+      background: rgba(#273c75, 0.4)
+      width: 100%
+      height: 100%
+
+    position: relative
+    bottom: 0%
+    left: 0%
+    height: 100%
+    width: 100%
+    overflow: hidden
+    background: #000
+    .project-poster img
+      width: 100%

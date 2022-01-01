@@ -1,0 +1,9 @@
+name: Clayton Brown
+markdown: kramdown
+highlighter: pygments # or rouge or null
+gems: [jekyll-paginate]
+plugins:
+  - jekyll-paginate
+exclude: ["node_modules", "gulpfile.js", "package.json"]
+paginate: 6
+paginate_path: "/reviews/page:num/"

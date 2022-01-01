@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width">
+	<meta property="og:title" content="Review Map">
+	<meta property="og:site_name" content="The Kentucky Food Review">
+	<meta property="og:url" content="/map.html">
+	<meta property="og:type" content="article">
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@thekyfoodreview">
+	<meta name="twitter:url" content="/map.html">
+	<meta name="twitter:title" content="Review Map">
+	
+
+  <title>Review Map | The Kentucky Food Review</title>
+	<link rel="stylesheet" href="/assets/css/main.css">
+
+  <!--[if lt IE 9]>
+    <script src="/assets/js/html5shiv.min.js"></script>
+    <script src="/assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <script type="text/javascript" src="/assets/js/jquery-1.11.3.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/89f2f44ba07ea3fff7e561c2142813b278c2d6c6/devicon.min.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest"></head>
+<body>
+
+<header>
+  <div class="header-container">
+    <div class="logo">
+      <a href="/index.html"><img class="logo-image" src="/assets/img/kyfoodreview-white.png" alt="The Kentucky Food Review"></a>
+    </div>
+    <a href="#" id="mobile-menu-button"><i class="fa fa-2x fa-bars"></i></a>
+    <ul class="menu">
+      <li><a data-scroll href="/index.html">Home</a></li>
+      <li><a data-scroll href="/reviews/index.html">Reviews</a></li>
+      <li><a data-scroll href="/map.html">Map</a></li>
+      <li><a data-scroll href="/about.html">About</a></li>
+    </ul>
+  </div>
+</header>
+<script src="/assets/js/navbarToggle.js"></script>
+<script>
+  $(document).ready(function(){
+    $(window).scroll(function(){
+      if(window.innerWidth > 1067){
+        if ($(this).scrollTop() >= 300){
+          $('header').addClass('sticky');
+          $('.logo-image').attr('src','/assets/img/kyfoodreview.png')
+        }
+        else {
+          $('header').removeClass('sticky');
+          $('.logo-image').attr('src','/assets/img/kyfoodreview-white.png')
+        }
+      }
+    });
+  });
+</script>
+
+	<div class="reviews-header">Review Map</div>
+<iframe src="https://www.google.com/maps/d/u/4/embed?mid=1l69fDItbZbMMmgZJSBuv1CIhWYRugT8N&ehbc=2E312F" width="90%" height="500px"></iframe>
+
+<footer>
+  <div class="footer-container">
+    <h5>The Kentucky Food Review &copy; 2022</h5>
+    <div class="footer-links">
+      <a href="mailto:contact@kyfoodreview.com"><i class="far fa-envelope fa-lg"></i></a>
+      <a href="https://www.facebook.com/kyfoodreview"><i class="fab fa-facebook fa-lg"></i></a>
+      <a href="https://www.instagram.com/kyfoodreview/"><i class="fab fa-instagram fa-lg"></i></a>
+      <a href="https://twitter.com/thekyfoodreview"><i class="fab fa-twitter fa-lg"></i></a>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>

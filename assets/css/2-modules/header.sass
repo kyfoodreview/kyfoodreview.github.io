@@ -1,0 +1,77 @@
+#mobile-menu-button
+  display: none
+
+  +media($mobile)
+    display: block
+    float: right
+    padding-top: 20px
+    color: white
+
+header
+  display: block
+  position: fixed
+  z-index: 9999
+  width: 100%
+  transition: all .25s
+
+  +media($mobile)
+    position: absolute
+
+.header-container
+  +outer-container(90%)
+  padding-top: 10px
+  padding-bottom: 10px
+
+.logo
+  float: left
+
+.logo-image
+  height: 75px
+  transition: all .25s
+
+  +media($mobile)
+    height: 50px
+
+.menu
+  float: right
+
+  li
+    display: inline
+    padding: 0px 20px
+    font-size: 15px
+
+    a
+      color: white
+      text-transform: uppercase
+      transition: color .25s
+
+      +media($mobile)
+        font-size: 30px
+        color: black
+
+
+    a:hover
+      text-decoration: underline
+
+    +media($mobile)
+      display: block
+      padding: 0 10px
+      border-top: 1px solid #95a5a6
+
+  +media($mobile)
+    float: right
+    display: none
+    font-size: 20px
+    text-align: center
+    width: 100%
+    background-color: white
+
+.sticky
+  background-color: white
+  border-bottom: 1px solid #ddd
+
+  .logo-text, .menu li a
+    color: black
+
+  .logo-image
+    height: 50px

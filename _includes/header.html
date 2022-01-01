@@ -1,0 +1,31 @@
+<header>
+  <div class="header-container">
+    <div class="logo">
+      <a href="/index.html"><img class="logo-image" src="/assets/img/kyfoodreview-white.png" alt="The Kentucky Food Review"></a>
+    </div>
+    <a href="#" id="mobile-menu-button"><i class="fa fa-2x fa-bars"></i></a>
+    <ul class="menu">
+      <li><a data-scroll href="/index.html">Home</a></li>
+      <li><a data-scroll href="/reviews/index.html">Reviews</a></li>
+      <li><a data-scroll href="/map.html">Map</a></li>
+      <li><a data-scroll href="/about.html">About</a></li>
+    </ul>
+  </div>
+</header>
+<script src="/assets/js/navbarToggle.js"></script>
+<script>
+  $(document).ready(function(){
+    $(window).scroll(function(){
+      if(window.innerWidth > 1067){
+        if ($(this).scrollTop() >= 300){
+          $('header').addClass('sticky');
+          $('.logo-image').attr('src','/assets/img/kyfoodreview.png')
+        }
+        else {
+          $('header').removeClass('sticky');
+          $('.logo-image').attr('src','/assets/img/kyfoodreview-white.png')
+        }
+      }
+    });
+  });
+</script>

@@ -1,0 +1,97 @@
+a.anchor
+  visibility: hidden
+  display: block
+  position: relative
+  top: -80px
+
+.section-header
+  font-size: 30px
+
+  +media($mobile)
+    text-align: center
+
+.project-container
+	+outer-container(100%)
+
+.project-tile:first-child, .project-tile:last-child
+  .project-title-container
+    opacity: 1
+    background-color: rgba(0,0,0,.9)
+
+  a
+    color: white
+
+    &:hover
+      text-decoration: underline
+
+  span
+    font-size: .5em
+
+.project-tile
+  width: 50%
+  float: left
+  margin: auto
+  height: 350px
+  background-size: cover
+
+  &:hover
+    .project-title-container
+      opacity: 1
+
+.project-title-container
+  height: 100%
+  background-color: rgba(0,0,0,.75)
+  position: relative
+  opacity: 0
+  transition: opacity .25s
+
+.project-title
+  color: white
+  font-size: 50px
+  font-weight: 400
+  position: absolute
+  top: 35%
+  left: 5%
+
+.service-container
+  background-color: #273c75
+  color: white
+
+  hr
+    border-color: white
+
+.service-blurb
+  text-align: center
+  padding-bottom: 20px
+
+  h2
+    font-size: 2.5em
+    font-weight: 400
+    margin: .25em
+
+  hr
+    width: 25%
+    margin: 5px auto
+
+
+.services
+  +outer-container()
+  padding-top: 40px
+  padding-bottom: 40px
+
+.service
+  +span-columns(4)
+  padding: 20px
+
+  .fa-4x
+    margin-left: auto
+    margin-right: auto
+    display: block
+
+  h3
+    font-size: 1.5em
+    text-align: center
+    font-weight: 400
+
+  hr
+    padding-bottom: 10px

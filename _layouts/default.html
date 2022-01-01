@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width">
+	<meta property="og:title" content="{{ page.title}}">
+	<meta property="og:site_name" content="The Kentucky Food Review">
+	<meta property="og:url" content="{{ page.url | absolute_url }}">
+	<meta property="og:type" content="article">
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@thekyfoodreview">
+	<meta name="twitter:url" content="{{ page.url | absolute_url }}">
+	<meta name="twitter:title" content="{{ page.title }}">
+	{% if page.heroimage %}
+	<meta name="twitter:image" content="https://www.kyfoodreview.com/assets/img/{{ page.heroimage}}">
+	{% endif %}
+
+  <title>{{ page.title }} | The Kentucky Food Review</title>
+	<link rel="stylesheet" href="/assets/css/main.css">
+
+  <!--[if lt IE 9]>
+    <script src="/assets/js/html5shiv.min.js"></script>
+    <script src="/assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <script type="text/javascript" src="/assets/js/jquery-1.11.3.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/89f2f44ba07ea3fff7e561c2142813b278c2d6c6/devicon.min.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest"></head>
+<body>
+
+{% include header.html %}
+	{{ content }}
+{% include footer.html %}
+
+</body>
+</html>

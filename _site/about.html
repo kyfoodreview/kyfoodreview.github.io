@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width">
+	<meta property="og:title" content="About">
+	<meta property="og:site_name" content="The Kentucky Food Review">
+	<meta property="og:url" content="/about.html">
+	<meta property="og:type" content="article">
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@thekyfoodreview">
+	<meta name="twitter:url" content="/about.html">
+	<meta name="twitter:title" content="About">
+	
+
+  <title>About | The Kentucky Food Review</title>
+	<link rel="stylesheet" href="/assets/css/main.css">
+
+  <!--[if lt IE 9]>
+    <script src="/assets/js/html5shiv.min.js"></script>
+    <script src="/assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <script type="text/javascript" src="/assets/js/jquery-1.11.3.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/89f2f44ba07ea3fff7e561c2142813b278c2d6c6/devicon.min.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest"></head>
+<body>
+
+<header>
+  <div class="header-container">
+    <div class="logo">
+      <a href="/index.html"><img class="logo-image" src="/assets/img/kyfoodreview-white.png" alt="The Kentucky Food Review"></a>
+    </div>
+    <a href="#" id="mobile-menu-button"><i class="fa fa-2x fa-bars"></i></a>
+    <ul class="menu">
+      <li><a data-scroll href="/index.html">Home</a></li>
+      <li><a data-scroll href="/reviews/index.html">Reviews</a></li>
+      <li><a data-scroll href="/map.html">Map</a></li>
+      <li><a data-scroll href="/about.html">About</a></li>
+    </ul>
+  </div>
+</header>
+<script src="/assets/js/navbarToggle.js"></script>
+<script>
+  $(document).ready(function(){
+    $(window).scroll(function(){
+      if(window.innerWidth > 1067){
+        if ($(this).scrollTop() >= 300){
+          $('header').addClass('sticky');
+          $('.logo-image').attr('src','/assets/img/kyfoodreview.png')
+        }
+        else {
+          $('header').removeClass('sticky');
+          $('.logo-image').attr('src','/assets/img/kyfoodreview-white.png')
+        }
+      }
+    });
+  });
+</script>
+
+	<div class="reviews-header">About</div>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pulvinar nibh non velit semper, porta fringilla enim molestie. Suspendisse fermentum faucibus lectus vitae blandit. Sed turpis metus, venenatis euismod maximus ac, gravida at orci. Etiam viverra congue ultrices. Duis tortor velit, pretium eu auctor et, vulputate vestibulum magna. Ut rhoncus et est hendrerit sodales. Aliquam erat volutpat.</p>
+
+<p>Nam condimentum a tortor non volutpat. Donec gravida orci iaculis magna congue, vitae tristique nisl posuere. Morbi vitae consectetur sem. Etiam ac tortor dui. Aenean at hendrerit nisi. In viverra, lectus quis eleifend tristique, tellus turpis fermentum purus, nec ornare nunc erat sit amet erat. Donec sollicitudin tempor nunc efficitur tempor. Suspendisse ut convallis odio. Curabitur pretium erat in leo interdum ultrices. Fusce venenatis, nisi sit amet porttitor venenatis, tortor augue sollicitudin augue, at cursus ante elit ac augue.</p>
+
+<p>Duis fermentum tortor nec malesuada porta. Ut bibendum sem eget mi cursus lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam facilisis bibendum mauris, sed pretium turpis tempor elementum. Aliquam elementum ligula nec ex iaculis, id commodo massa dictum. Aenean finibus augue quis nisi pellentesque volutpat. Proin nec eros massa.</p>
+
+<footer>
+  <div class="footer-container">
+    <h5>The Kentucky Food Review &copy; 2022</h5>
+    <div class="footer-links">
+      <a href="mailto:contact@kyfoodreview.com"><i class="far fa-envelope fa-lg"></i></a>
+      <a href="https://www.facebook.com/kyfoodreview"><i class="fab fa-facebook fa-lg"></i></a>
+      <a href="https://www.instagram.com/kyfoodreview/"><i class="fab fa-instagram fa-lg"></i></a>
+      <a href="https://twitter.com/thekyfoodreview"><i class="fab fa-twitter fa-lg"></i></a>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>

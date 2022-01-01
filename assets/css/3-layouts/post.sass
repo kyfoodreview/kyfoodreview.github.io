@@ -1,0 +1,71 @@
+.post-hero
+  width: 100%
+  height: 500px
+  background-size: cover
+
+  +media($mobile)
+    height: 300px
+
+.hero-container
+  +outer-container(90%)
+
+  .post-title
+    padding-top: 25%
+    color: white
+    font: 600 90px 'American Typewriter'
+
+    +media($mobile)
+      font-size: 80px
+
+  .post-date
+    color: white
+    font: 700 15px 'Lato'
+
+.post-container
+  +outer-container(90%)
+  padding: 10px 0px
+
+  +media($mobile)
+    padding: 10px 10px
+
+.post-left
+  +span-columns(8)
+
+  .post-content
+    font-size: 16px
+    padding-top: 10px
+
+  +media($mobile)
+    +span-columns(4)
+
+.post-right
+  +span-columns(4)
+
+  .post-style, .post-rating, .post-website, .post-address
+    font: 500 15px 'Lato'
+
+  .post-info
+    font: 600 25px 'American Typewriter'
+
+  +media($mobile)
+    +span-columns(4)
+
+
+.post-img-left
+  float: left
+  width: 300px
+  padding: 0 10px 10px 0
+
+.post-img-right
+  float: right
+  width: 300px
+  padding: 0 0 10px 10px
+
+.post-img-center
+  width: 300px
+  padding: 10px 0
+  display: block
+  margin: 0 auto
+
+.disqus-container
+  +outer-container(90%)
