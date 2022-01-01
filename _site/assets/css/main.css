@@ -635,7 +635,8 @@ a.anchor {
 .about-container {
   max-width: 75%;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  font-size: 15px; }
   .about-container::after {
     clear: both;
     content: "";
