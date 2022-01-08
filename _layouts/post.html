@@ -13,10 +13,27 @@ comments: true
     <div class="post-content">{{ content }}</div>
   </div>
   <div class="post-right">
-    <div class="post-style"><span class="post-info">Style:  </span>{{ page.style }}</div>
-    <div class="post-rating"><span class="post-info">Rating:  </span>{{ page.rating }} out of 5</div>
-    <div class="post-website"><span class="post-info">Website:  </span><a href="{{ page.website }}">{{ page.website }}</a></div>
-    <div class="post-address"><span class="post-info">Address:  </span>{{ page.address }}</div>
+    <table>
+      <tr>
+        <td><span class="post-info">Style:  </span></td>
+        <td>{% for tag in page.tags %}
+          {% capture tag_name %}{{ tag }}{% endcapture %}
+          <a href="/tag/{{ tag_name }}.html" style="text-transform: capitalize; text-decoration: underline">{{ tag_name }}</a>
+        {% endfor %}</td>
+      </tr>
+      <tr>
+        <td><span class="post-info">Rating:  </span></td>
+        <td>{{ page.rating }} out of 10</td>
+      </tr>
+      <tr>
+        <td><span class="post-info">Website:  </span></td>
+        <td><a href="{{ page.website }}">{{ page.website }}</a></td>
+      </tr>
+      <tr>
+        <td><span class="post-info">Address:  </span></td>
+        <td>{{ page.address }}</td>
+      </tr>
+    </table>
     <div class="post-map">
       <iframe
   width=100%

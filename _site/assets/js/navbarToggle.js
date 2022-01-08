@@ -1,13 +1,25 @@
-$('#mobile-menu-button').click(function(){
-    event.preventDefault();
-		$('.menu').slideToggle();
-	})
+$(document).ready(function(){
+  var moreToggle = $('.more').unbind();
 
-$(window).resize(function(){
+  $('#mobile-menu-button').click(function(){
+      event.preventDefault();
+  		$('.menu').slideToggle();
+  	})
 
-  if ($(window).width() > 849){
-      
-    $('.menu').removeAttr('style');
-    
-    }
-  })
+  $(window).resize(function(){
+
+    if ($(window).width() > 849){
+
+      $('.menu').removeAttr('style');
+
+      }
+    })
+
+  moreToggle.on('click', function(e){
+    $(this).find('#sub-menu').slideToggle(function(){
+      if($('#sub-menu').is(':hidden')) {
+        $('#sub-menu').removeAttr('style');
+      }
+    });
+  });
+});

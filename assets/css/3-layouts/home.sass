@@ -1,102 +1,53 @@
-a.anchor
-  visibility: hidden
-  display: block
-  position: relative
-  top: -80px
-
-.section-header
-  font-size: 30px
-
-  +media($mobile)
-    text-align: center
-
-.project-container
-	+outer-container(100%)
-
-.project-tile:first-child, .project-tile:last-child
-  .project-title-container
-    opacity: 1
-    background-color: rgba(0,0,0,.9)
-
-  a
-    color: white
-
-    &:hover
-      text-decoration: underline
-
-  span
-    font-size: .5em
-
-.project-tile
-  width: 50%
-  float: left
-  margin: auto
-  height: 350px
+.home-header
+  width: 100%
+  height: 550px;
+  padding-top: 200px;
+  margin-bottom: 50px;
+  text-align: center
+  font: 500 40px 'American Typewriter'
+  color: white
+  +background-image(linear-gradient(rgba(#000, 0.5), rgba(#000, 0.5)), url(/assets/img/lexington.jpeg))
+  background-position: top
   background-size: cover
 
-  &:hover
-    .project-title-container
-      opacity: 1
+.hero-header
+  width: 100%
+  height: 300px;
+  padding-top: 120px;
+  margin-bottom: 50px;
+  +background-image(linear-gradient(rgba(#000, 0.5), rgba(#000, 0.5)), url(/assets/img/restaurant.jpg))
+  background-position: center
+  background-size: cover
 
-.project-title-container
-  height: 100%
-  background-color: rgba(0,0,0,.75)
-  position: relative
-  opacity: 0
-  transition: opacity .25s
-
-.project-title
-  color: white
-  font-size: 50px
-  font-weight: 400
-  position: absolute
-  top: 35%
-  left: 5%
-
-.service-container
-  background-color: #273c75
-  color: white
-
-  hr
-    border-color: white
-
-.service-blurb
-  text-align: center
-  padding-bottom: 20px
-
-  h2
-    font-size: 2.5em
-    font-weight: 400
-    margin: .25em
-
-  hr
-    width: 25%
-    margin: 5px auto
-
-
-.services
-  +outer-container()
-  padding-top: 40px
-  padding-bottom: 40px
-
-.service
-  +span-columns(4)
-  padding: 20px
-
-  .fa-4x
-    margin-left: auto
-    margin-right: auto
-    display: block
-
-  h3
-    font-size: 1.5em
+  h1
     text-align: center
-    font-weight: 400
+    font: 500 50px 'American Typewriter'
+    color: white
 
-  hr
-    padding-bottom: 10px
+  +media($mobile)
+    padding-top: 90px
+    height: 200px
+    margin-bottom: 25px
 
 
 .about-container
   +outer-container(75%)
   font-size: 15px
+
+.map-container
+  +outer-container(90%)
+
+  iframe
+    display: block
+    margin: 0 auto
+
+.style-menu
+
+  li
+    list-style: none
+    text-align: center
+
+    a
+      font: 500 40px 'American Typewriter'
+      text-transform: capitalize
+      text-decoration: underline

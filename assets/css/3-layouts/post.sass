@@ -53,19 +53,28 @@
 
 .post-img-left
   float: left
-  width: 300px
+  width: 45%
   padding: 0 10px 10px 0
 
 .post-img-right
   float: right
-  width: 300px
+  width: 45%
   padding: 0 0 10px 10px
 
 .post-img-center
-  width: 300px
+  width: 60%
   padding: 10px 0
   display: block
   margin: 0 auto
+
++media($mobile)
+  .post-img-left, .post-img-right, .post-img-center
+    float: none
+    width: 90%
+    padding: 10px 0
+    display: block
+    margin: 0 auto
+
 
 .disqus-container
   +outer-container(90%)

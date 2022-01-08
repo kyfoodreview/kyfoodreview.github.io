@@ -527,110 +527,37 @@ footer {
       .footer-container .footer-links a:hover {
         color: #4d4d4d; }
 
-a.anchor {
-  visibility: hidden;
-  display: block;
-  position: relative;
-  top: -80px; }
-
-.section-header {
-  font-size: 30px; }
-  @media screen and (min-width: 0px) and (max-width: 849px) {
-    .section-header {
-      text-align: center; } }
-
-.project-container {
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto; }
-  .project-container::after {
-    clear: both;
-    content: "";
-    display: table; }
-
-.project-tile:first-child .project-title-container, .project-tile:last-child .project-title-container {
-  opacity: 1;
-  background-color: rgba(0, 0, 0, 0.9); }
-
-.project-tile:first-child a, .project-tile:last-child a {
-  color: white; }
-  .project-tile:first-child a:hover, .project-tile:last-child a:hover {
-    text-decoration: underline; }
-
-.project-tile:first-child span, .project-tile:last-child span {
-  font-size: .5em; }
-
-.project-tile {
-  width: 50%;
-  float: left;
-  margin: auto;
-  height: 350px;
-  background-size: cover; }
-  .project-tile:hover .project-title-container {
-    opacity: 1; }
-
-.project-title-container {
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.75);
-  position: relative;
-  opacity: 0;
-  -webkit-transition: opacity .25s;
-          transition: opacity .25s; }
-
-.project-title {
-  color: white;
-  font-size: 50px;
-  font-weight: 400;
-  position: absolute;
-  top: 35%;
-  left: 5%; }
-
-.service-container {
-  background-color: #273c75;
-  color: white; }
-  .service-container hr {
-    border-color: white; }
-
-.service-blurb {
+.home-header {
+  width: 100%;
+  height: 550px;
+  padding-top: 200px;
+  margin-bottom: 50px;
   text-align: center;
-  padding-bottom: 20px; }
-  .service-blurb h2 {
-    font-size: 2.5em;
-    font-weight: 400;
-    margin: .25em; }
-  .service-blurb hr {
-    width: 25%;
-    margin: 5px auto; }
+  font: 500 40px 'American Typewriter';
+  color: white;
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/img/lexington.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/img/lexington.jpeg);
+  background-position: top;
+  background-size: cover; }
 
-.services {
-  max-width: 85.625em;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 40px;
-  padding-bottom: 40px; }
-  .services::after {
-    clear: both;
-    content: "";
-    display: table; }
-
-.service {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 31.76157%;
-  padding: 20px; }
-  .service:last-child {
-    margin-right: 0; }
-  .service .fa-4x {
-    margin-left: auto;
-    margin-right: auto;
-    display: block; }
-  .service h3 {
-    font-size: 1.5em;
+.hero-header {
+  width: 100%;
+  height: 300px;
+  padding-top: 120px;
+  margin-bottom: 50px;
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/img/restaurant.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/img/restaurant.jpg);
+  background-position: center;
+  background-size: cover; }
+  .hero-header h1 {
     text-align: center;
-    font-weight: 400; }
-  .service hr {
-    padding-bottom: 10px; }
+    font: 500 50px 'American Typewriter';
+    color: white; }
+  @media screen and (min-width: 0px) and (max-width: 849px) {
+    .hero-header {
+      padding-top: 90px;
+      height: 200px;
+      margin-bottom: 25px; } }
 
 .about-container {
   max-width: 75%;
@@ -641,6 +568,26 @@ a.anchor {
     clear: both;
     content: "";
     display: table; }
+
+.map-container {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto; }
+  .map-container::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .map-container iframe {
+    display: block;
+    margin: 0 auto; }
+
+.style-menu li {
+  list-style: none;
+  text-align: center; }
+  .style-menu li a {
+    font: 500 40px 'American Typewriter';
+    text-transform: capitalize;
+    text-decoration: underline; }
 
 .reviews-header {
   width: 100%;
@@ -811,19 +758,27 @@ a.anchor {
 
 .post-img-left {
   float: left;
-  width: 300px;
+  width: 45%;
   padding: 0 10px 10px 0; }
 
 .post-img-right {
   float: right;
-  width: 300px;
+  width: 45%;
   padding: 0 0 10px 10px; }
 
 .post-img-center {
-  width: 300px;
+  width: 60%;
   padding: 10px 0;
   display: block;
   margin: 0 auto; }
+
+@media screen and (min-width: 0px) and (max-width: 849px) {
+  .post-img-left, .post-img-right, .post-img-center {
+    float: none;
+    width: 90%;
+    padding: 10px 0;
+    display: block;
+    margin: 0 auto; } }
 
 .disqus-container {
   max-width: 90%;
