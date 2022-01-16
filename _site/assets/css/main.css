@@ -699,7 +699,7 @@ footer {
     font: 600 90px 'American Typewriter'; }
     @media screen and (min-width: 0px) and (max-width: 849px) {
       .hero-container .post-title {
-        font-size: 80px; } }
+        font-size: 3em; } }
   .hero-container .post-date {
     color: white;
     font: 700 15px 'Lato'; }
