@@ -38,5 +38,3 @@ Moros rice, sometimes also known as Arroz Congri, is a simple yet delicious mixt
 While I didn’t order desert this time, I highly recommend the Catalonian Custard ($5.99). It is like a mixture between a coffee-flavored flan and a crème brulée. (8/10)
 
 Hola Havana is the much-needed and exciting addition to the multi-cultural food scene in Lexington. There is clearly a lot of love and passion put not only into the food they cook but also in the way that they interact with customers. I definitely recommend that people give this restaurant a try, I know that I’ll be returning.
-
-![Hola Havana Menu](/assets/img/hola-havana/menu.jpg){: .post-img-center}
