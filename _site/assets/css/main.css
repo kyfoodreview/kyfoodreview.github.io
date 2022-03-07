@@ -757,6 +757,9 @@ footer {
       .post-right:last-child {
         margin-right: 0; } }
 
+.post-link {
+  text-decoration: underline; }
+
 .post-img-left {
   float: left;
   width: 40%;
