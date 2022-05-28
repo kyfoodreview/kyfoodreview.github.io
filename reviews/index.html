@@ -15,7 +15,7 @@ title: Reviews
   </div>
 {%  endfor %}
 {% assign post_count=site.posts | size %}
-{% if post_count == 6 %}
+{% if post_count >= 6 %}
   <div class="pagination">
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path }}" class="previous">
