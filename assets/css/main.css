@@ -518,7 +518,7 @@ footer {
   .footer-container h5 {
     float: left;
     margin: 0;
-    font-family: "American Typewriter"; }
+    font-family: 'Special Elite', sans-serif; }
   .footer-container .footer-links {
     float: right; }
     .footer-container .footer-links a {
@@ -533,7 +533,7 @@ footer {
   padding-top: 200px;
   margin-bottom: 50px;
   text-align: center;
-  font: 500 40px 'American Typewriter';
+  font: 400 50px 'Special Elite', sans-serif;
   color: white;
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/img/lexington.jpeg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/img/lexington.jpeg);
@@ -551,7 +551,7 @@ footer {
   background-size: cover; }
   .hero-header h1 {
     text-align: center;
-    font: 500 50px 'American Typewriter';
+    font: 500 50px 'Special Elite', sans-serif;
     color: white; }
   @media screen and (min-width: 0px) and (max-width: 849px) {
     .hero-header {
@@ -585,7 +585,7 @@ footer {
   list-style: none;
   text-align: center; }
   .style-menu li a {
-    font: 500 40px 'American Typewriter';
+    font: 500 40px 'Special Elite', sans-serif;
     text-transform: capitalize;
     text-decoration: underline; }
 
@@ -595,8 +595,7 @@ footer {
   padding-top: 120px;
   margin-bottom: 50px;
   text-align: center;
-  font-size: 50px;
-  font-family: 'American Typewriter';
+  font: 50px 'Special Elite', sans-serif;
   color: white;
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/img/restaurant.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/img/restaurant.jpg);
@@ -644,8 +643,8 @@ footer {
       width: 100%;
       height: 250px; }
     .reviews-container .reviews-post .reviews-title {
-      font: bold 30px 'American Typewriter';
-      padding: 0px 10px; }
+      padding: 10px;
+      font: bold 30px 'Special Elite', sans-serif; }
     .reviews-container .reviews-post .reviews-date {
       padding: 0px 10px;
       margin: 0; }
@@ -672,8 +671,7 @@ footer {
       padding: 0 10px; } }
 
 .pagination {
-  font-family: 'American Typewriter';
-  font-size: 25px;
+  font: 25px 'Special Elite', sans-serif;
   text-align: center; }
   .pagination .previous, .pagination .next {
     font-size: 30px; }
@@ -695,9 +693,9 @@ footer {
     content: "";
     display: table; }
   .hero-container .post-title {
-    padding-top: 25%;
+    padding-top: 20%;
     color: white;
-    font: 600 90px 'American Typewriter'; }
+    font: 600 90px 'Special Elite', sans-serif; }
     @media screen and (min-width: 0px) and (max-width: 849px) {
       .hero-container .post-title {
         font-size: 3em; } }
@@ -747,7 +745,7 @@ footer {
   .post-right .post-style, .post-right .post-rating, .post-right .post-website, .post-right .post-address {
     font: 500 15px 'Lato'; }
   .post-right .post-info {
-    font: 600 25px 'American Typewriter'; }
+    font: 400 20px 'Special Elite', sans-serif; }
   @media screen and (min-width: 0px) and (max-width: 849px) {
     .post-right {
       float: left;
